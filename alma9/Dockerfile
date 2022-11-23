@@ -16,6 +16,7 @@ RUN { \
     echo '#!/bin/bash -eu'; \
     echo 'ln -fs /usr/share/zoneinfo/${TIMEZONE} /etc/localtime'; \
     echo 'echo "root:${ROOT_PASSWORD}" | chpasswd'; \
+    echo 'touch /var/log/lastlog'; \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entry_point.sh; \
     chmod +x /usr/local/bin/entry_point.sh;
