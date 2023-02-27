@@ -8,6 +8,9 @@ Star this repository if it is useful for you.
 - [`latest`, `alma9`](https://github.com/takeyamajp/docker-alma-sshd/blob/master/alma9/Dockerfile)
 - [`alma8`](https://github.com/takeyamajp/docker-alma-sshd/blob/master/alma8/Dockerfile)
 
+ ### Supported architectures: ([`more info`](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+ `amd64`, `arm64(for Raspberry Pi)`
+
 ## Image summary
     FROM almalinux:9  
     MAINTAINER "Hiroki Takeyama"
